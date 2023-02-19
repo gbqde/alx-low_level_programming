@@ -1,2 +1,2 @@
-CFILE="main.c"
-gcc -S -masm=intel "$CFILE" -o "${CFILE%.*}.s"
+#!/bin/bash
+gcc -S -masm=intel "$CFILE" && mv "${CFILE%.*}.s" .
