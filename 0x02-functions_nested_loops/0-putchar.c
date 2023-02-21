@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * main - print _putchar
+ * is a code by gbqde
  * Return: 0
  */
 
