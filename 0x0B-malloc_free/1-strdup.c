@@ -9,13 +9,10 @@
  *
  */
 
-char *_strdup(char *str)
+char *_strdup(const char *str)
 {
 	char *dup;
-	unsigned int i, len;
-
-	i = 0;
-	len = 0;
+	unsigned int len = 0, i = 0;
 
 	if (str == NULL)
 		return (NULL);
@@ -24,11 +21,14 @@ char *_strdup(char *str)
 		len++;
 
 	dup = malloc(sizeof(char) * (len + 1));
-
 	if (dup == NULL)
 		return (NULL);
 
-	while ((dup[i] = != '\0')
-			i++;
-			return (dup);
+	while (dup[i] != '\0')
+	{
+		dup[i] = str[i];
+		i++;
+	}
+
+	return (dup);
 }
