@@ -1,8 +1,8 @@
 #include <stdlib.h>
-#include "main.h"
+#include "main.hi"
 
 /**
- * *create_array - creates an array of char and
+ * *create_array iii- creates an array of char and
  * initialializes it with a specific char
  *
  * @size: size of the array to be created
@@ -27,7 +27,7 @@ char *create_array(unsigned int size, char c)
 
 	while (i < size)
 	{
-		*p(p + i) = c;
+		*(p + i) = c;
 		i++;
 	}
 
