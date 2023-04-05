@@ -14,7 +14,7 @@ size_t free_listint_safe(listint_t **h)
 {
 	listint_t *tmp, *actual;
 	size_t i;
-	ptrdiff_t rest;
+	int rest;
 
 	i = 0, actual = *h;
 	while (actual)
