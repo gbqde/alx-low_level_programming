@@ -13,10 +13,10 @@
 size_t free_listint_safe(listint_t **h)
 {
 	listint_t *tmp, *actual;
-	size_t i = 0;
+	size_t i;
 	ptrdiff_t rest;
 
-	actual = *h;
+	i = 0, actual = *h;
 	while (actual)
 	{
 		rest = actual - actual->next;
