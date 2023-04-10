@@ -11,7 +11,8 @@
 
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	/* Check if the index is greater 
+	/*
+	 * Check if the index is greater
 	 * than the number of bits in unsigned long int.
 	 *
 	 */
