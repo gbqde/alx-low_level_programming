@@ -24,7 +24,6 @@ char *create_buffer(char *file)
 }
 
 
-
 /**
  * close_file - Closes a file descriptor.
  * @fd: The file descriptor to be closed.
@@ -32,7 +31,6 @@ char *create_buffer(char *file)
  * Description: Closes a file descriptor and exits with an error message if the
  *		file cannot be closed.
  */
-
 
 void close_file(int fd)
 {
@@ -47,7 +45,6 @@ void close_file(int fd)
 	}
 }
 
-
 /**
  * main - Copies the contents of a file to another file.
  * @argc: The number of arguments supplied to the program.
@@ -60,7 +57,6 @@ void close_file(int fd)
  *		number of arguments is incorrect, if file_from cannot be read,
  *		or if file_to cannot be created or written to.
  */
-
 
 int main(int argc, char *argv[])
 {
